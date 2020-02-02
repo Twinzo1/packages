@@ -11,6 +11,7 @@ diff -uNr a/metadata.c b/metadata.c
 +			xasprintf(&m.mime, "video/x-pn-realvideo");  
  		if( m.mime )
  			goto video_no_dlna;
+
 diff -uNr a/utils.c b/utils.c
 --- a/utils.c
 +++ b/utils.c
