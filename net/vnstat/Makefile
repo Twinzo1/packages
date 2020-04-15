@@ -8,12 +8,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=vnstat
-PKG_VERSION:=1.18
+PKG_VERSION:=2.6
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=http://humdi.net/vnstat
-PKG_HASH:=d7193592b9e7445fa5cbe8af7d3b39982f165ee8fc58041ff41f509b37c687d5
+PKG_HASH:=89276e0a7281943edb554b874078278ad947dc312938a2451e03eb80679f7ff7
 PKG_MAINTAINER:=Jo-Philipp Wich <jo@mein.io>
 
 PKG_INSTALL:=1
@@ -31,6 +31,7 @@ endef
 
 define Package/vnstat
 $(call Package/vnstat/Default)
+  DEPENDS+= +libsqlite3
   TITLE:=Console-based network traffic monitor
 endef
 

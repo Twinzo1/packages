@@ -7,20 +7,23 @@ devices.
 
 Signed-off-by: Jo-Philipp Wich <jo@mein.io>
 
+Date: Wed, 15 Apr 2020 22:35
+Update by Twinzo1<1282055288@qq.com> on 2020-4-15 22:35
+
 --- a/cfg/vnstat.conf
 +++ b/cfg/vnstat.conf
-@@ -87,13 +87,13 @@ DaemonUser ""
- DaemonGroup ""
+@@ -95,13 +95,13 @@ YearlyYears    -1
+ TopDayEntries  20
  
  # how often (in seconds) interface data is updated
--UpdateInterval 30
+-UpdateInterval 20
 +UpdateInterval 60
  
  # how often (in seconds) interface status changes are checked
 -PollInterval 5
 +PollInterval 30
  
- # how often (in minutes) data is saved to file
+ # how often (in minutes) data is saved to database
 -SaveInterval 5
 +SaveInterval 30
  
