@@ -136,6 +136,7 @@ endef
 define Package/node/install
 	$(INSTALL_DIR) $(1)/usr/bin
 	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/usr/bin/node $(1)/usr/bin/
+	$(STAGING_DIR_HOST)/bin/upx --lzma --best $(1)/sbin/node
 endef
 
 define Package/node-npm/install
