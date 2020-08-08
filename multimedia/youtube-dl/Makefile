@@ -35,6 +35,7 @@ define Package/youtube-dl
     +python3-codecs \
     +python3-ctypes \
     +python3-setuptools
+  VARIANT:=python3
 endef
 
 define Package/youtube-dl/description
