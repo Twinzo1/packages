@@ -278,7 +278,6 @@ define Py3Package/python3-base/install
 	$(INSTALL_DIR) $(1)/usr/lib/python$(PYTHON3_VERSION)/lib-dynload/
 	$(INSTALL_DIR) $(1)/usr/bin
 	$(LN) python$(PYTHON3_VERSION) $(1)/usr/bin/python3
-	$(LN) python$(PYTHON3_VERSION) $(1)/usr/bin/python
 	$(CP) $(PKG_INSTALL_DIR)/usr/lib/libpython$(PYTHON3_VERSION).so* $(1)/usr/lib/
   # This depends on being called before filespec is processed
 	$(SED) 's|$(TARGET_AR)|ar|g;s|$(TARGET_CROSS)readelf|readelf|g;s|$(TARGET_CC)|gcc|g;s|$(TARGET_CXX)|g++|g' \
