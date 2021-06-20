@@ -12,8 +12,13 @@ Update by Twinzo1<1282055288@qq.com> on 2020-4-15 22:35
 
 --- a/cfg/vnstat.conf
 +++ b/cfg/vnstat.conf
+<<<<<<< HEAD
 @@ -95,13 +95,13 @@ YearlyYears    -1
  TopDayEntries  20
+=======
+@@ -98,13 +98,13 @@ DaemonGroup ""
+ TimeSyncWait 5
+>>>>>>> 82fdfd65b03d64d7c7f4cb057233f001619ac1b1
  
  # how often (in seconds) interface data is updated
 -UpdateInterval 20
